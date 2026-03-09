@@ -1,5 +1,5 @@
 <!-- & This creates a banner for the ReadMe -->
-<img src="img/maiden-wine-viewing-the-cherry-blossoms.png" alt="" width="575" height="475">
+<img src="img/maiden-wine-viewing-the-cherry-blossoms.png" alt="" width="100%" height="475">
 
 # <p align="center">🌸 Variable: JavaScript's Treasure Boxes 🌸</p>
 
