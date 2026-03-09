@@ -110,41 +110,81 @@
             console.loge(startDate); //~ The output: 01/05/26
             console.loge(endDate); //~ The output: undefined
         ```
--   [ ] <b></b>:
-    -   [ ]
+-   [ ] <b>Arithmetic Operators</b>:
+    -   [ ] Variables can be used with operatord to perform math calculations
+    -   [ ] JavaScript follows standard order of operations (parentheses first)
         ```javascript
-
+            //~ Basic arithmetic
+            let score = 0;
+            score = 4 + 3; //~ The score is now 7
+            score = 4 - 3; //~ The score is now 1
+            score = 4 * 3; //~ The score is now 12
+            score = 4 / 3; //~ The score is now 1.3333
+            console.log(score); //~ The output: 1.3333
         ```
--   [ ] <b></b>:
-    -   [ ]
+-   [ ] The <b>Modulo Operator (%)</b>:
+    -   [ ] Returns the remainder after division
+    -   [ ] Great for finding if numbers are even or odd, or for cycling through values
         ```javascript
+            score = 4 % 3;
+            //~ 4 divided by 3 is 1 with remainder 1, so score is now 1
+            console.log(score); //~ The output: 1
 
+            //~ 10 % 3 would be 1 (10 / 3 = 3 remainder 1)
+            //~ 16 % 4 would be 0 (16 / 4 = remainder 0)
         ```
--   [ ] <b></b>:
-    -   [ ]
+-   [ ] The <b>Exponent Operator (**)</b>:
+    -   [ ] Raises one number to the power of another number
+    -   [ ] Written as base ** exponent
         ```javascript
-
+            let score = 0;
+            score = 2 ** 2; //~ 2^2 = 4
+            score = 2 ** 3; //~ 2^3 = 8
+            score = 2 ** 4; //~ 2^4 = 16
+            score = 2 ** 5; //~ 2^5 = 32
+            console.log(score) //~ The output: 32
         ```
--   [ ] <b></b>:
-    -   [ ]
+-   [ ] <b>SyntaxError</b>:
+    -   [ ] Happens when invalid JavaScript code is present
+    -   [ ] Often from missing punctuation like parentheses, quotes, or brackets
         ```javascript
+            //~ This would cause an error;
+            console.log('Hello, World!';
+            //~ SyntaxError: missing ) after arguement list
 
+            //~ The fix:
+            console.log('Hello, World!');
         ```
--   [ ] <b></b>:
-    -   [ ]
+-   [ ] <b>ReferenceError</b>:
+    -   [ ] Happens when trying to use a variable that hasn't been defined
+    -   [ ] The variable doesn't exist yet, so JavaScript doesn't know what to do
         ```javascript
+            //~ This would cause an error:
+            let score = x + 2;
+            //~ ReferenceError: x is not defined
 
+            //~ The fix: define x first
+            let x = 5;
+            let score = x +2; //~ Now it works
         ```
--   [ ] <b></b>:
-    -   [ ]
+-   [ ] <b>TypeError</b>:
+    -   [ ] Happens when a data type is being misused during an operation
+    -   [ ] Common when trying to change a const variable
         ```javascript
+            //~ This would cause an error:
+            const meaningOfLife = 42;
+            meaningOfLife = 43;
+            //~ TypeError: Assignment to constant variable
 
+            //~ The fix: use let if the value needs to change
+            let meaningOfLife = 42;
+            meaningOfLife = 43; //~ Now it works
         ```
 
 
 <hr>
 
-## <p align="center">✨ Encompaassed Technologies</p>
+## <p align="center">✨ Encompassed Technologies</p>
 -   [ ] <b>JavaScript:</b>
     -   [ ] The programming language that is the magic behind the scenes that makes webpages react, calculate, and come alive. Turning static pages into conversations.
 -   [ ] <b>Browser Developer Tools:</b>
